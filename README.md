@@ -1,5 +1,5 @@
 # Hello_World
 random codes
-This would display the text "Hello World" in Java.
+These are my sample codes in Java.
 
 Author: Jefferson Fernandez
