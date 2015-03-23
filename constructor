@@ -1,0 +1,11 @@
+package jeff_samples;
+
+public class Hello_World {
+	
+	public static void main (String [] args){
+		practice p = new practice();
+		p.printMessage();
+		
+	}
+	 
+}
