@@ -1,0 +1,14 @@
+package jeff_samples;
+
+public class practice {
+	private static String privateAlias = "Jeff2";
+	
+	public static void setPrivateAlias(String s){
+		privateAlias = s;
+	}
+	
+	public static String getPrivateAlias(){
+		return privateAlias;
+	}
+
+}
