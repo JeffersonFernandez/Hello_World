@@ -1,0 +1,11 @@
+package jeff_samples;
+
+public class practice {
+	public practice(){
+		System.out.println("This is a constructor");
+		
+		}
+	public void printMessage(){
+		System.out.println("Call constructor");
+	}
+}
