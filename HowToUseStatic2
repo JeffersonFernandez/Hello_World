@@ -1,0 +1,5 @@
+package jeff_samples;
+
+public class practice {
+	public static int number = 10;
+}
