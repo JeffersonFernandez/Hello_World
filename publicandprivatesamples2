@@ -1,0 +1,7 @@
+package jeff_samples;
+
+public class practice {
+	public static String alias = "Jeff";
+	private static String privatealias = "Jeff2";
+
+}
