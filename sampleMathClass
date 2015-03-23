@@ -1,0 +1,11 @@
+package jeff_samples;
+
+public class Hello_World {
+	
+	public static void main (String [] args){
+		double carWash = 9.99;
+		System.out.println(Math.floor(carWash));
+		
+	}
+	 
+}
