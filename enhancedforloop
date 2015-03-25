@@ -1,0 +1,15 @@
+package jeff_samples;
+
+public class Hello_World {
+	
+	public static void main (String [] args){
+		int numbers[] = {123, 34, 56, 45, 23, 67};
+		int total = 0;
+		
+		for(int i: numbers){
+			total += i;
+		}
+		System.out.println(total);
+	}
+	 
+}
