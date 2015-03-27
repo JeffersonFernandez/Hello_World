@@ -1,0 +1,10 @@
+package jeff_samples;
+
+public class Hello_World {
+	
+	public static void main (String [] args){
+		int theArray[][] = {{20,30},
+							{40,50}};
+		System.out.println(theArray[1][1]);
+	}
+}
