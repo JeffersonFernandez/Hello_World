@@ -1,0 +1,29 @@
+import java.io.*;
+public class GradeEval2 {
+public static void main(String [] args) throws IOException {
+BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+	float grade;
+	char ans;
+
+
+do{
+System.out.print("\n\tEnter Grade: ");
+grade = Float.parseFloat(br.readLine());
+
+if (grade >= 75.00 && grade <= 100.00){
+	System.out.print("\n\tPassed");
+	}
+else if  (grade >= 0.00 && grade <= 74.99) {
+	System.out.print("\n\tFailed");
+	}
+else if  (grade >100) {
+	System.out.print("\n\tInvalid");
+	}
+else if (grade <0) {
+	System.out.print("\n\tInvalid");
+	}
+System.out.print("\n\n\nTry Another Y/N?: ");
+ans= br.readLine().charAt(0);
+}while (ans !='n' && ans !='N');
+}//main
+}//class
