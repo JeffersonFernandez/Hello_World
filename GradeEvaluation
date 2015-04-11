@@ -1,0 +1,46 @@
+
+
+import java.io.*;
+public class GradeEvaluation {
+    
+    static void EnterGrade()throws IOException{
+    BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+       
+        System.out.print("\nEntering Grade: ");
+        
+        }//Enter Grade
+    static void Evaluate()throws IOException{
+    
+        char ans;
+    BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+    do
+    {
+        EnterGrade();
+        float x;
+            x = Float.parseFloat(br.readLine());
+            
+            if (x >= 75 && x <= 100){
+                System.out.print(x + " Passed");
+            }
+            else if ( x > 100){
+                System.out.print(x + " Invalid");
+            }
+            else {
+                System.out.print(x + " Failed");  
+            }
+            
+            System.out.print("\nTry another Y/N?: ");
+            
+            ans = br.readLine().charAt(0);
+            System.out.print("\n");
+    }
+    while (ans == 'Y' || ans == 'y');
+    }//Evaluate
+   
+public static void main(String[]args)throws IOException{
+    BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+    
+    Evaluate();
+    }
+    
+}//main
