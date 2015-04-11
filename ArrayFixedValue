@@ -1,0 +1,18 @@
+public class ArrayFixedValue {
+    public static void main(String[]args){
+        
+       int[] arNum = new int[5];
+       int i;
+    
+    System.out.print("\nOne-Dime");
+        for(i = 0; i < 5; i ++){
+            arNum[i] = i + 1;
+        }
+        
+        for (i = 0; i < 5; i ++){
+            System.out.println("\n" + arNum[i]);
+        }
+        
+    }
+    
+}
