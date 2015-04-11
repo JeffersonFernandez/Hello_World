@@ -1,0 +1,16 @@
+import java.io.*;
+public class ForLoopStringNumber {
+public static void main(String [] args) throws IOException{
+BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+	String message;
+	int num;
+System.out.print("\nEnter any text: ");
+message=br.readLine();
+System.out.print("\nEnter any number: ");
+num=Integer.parseInt(br.readLine());
+for(int  i = 0; i < num; i++){
+System.out.print("\n" + message);
+
+}//for loop
+}//main
+}//class
