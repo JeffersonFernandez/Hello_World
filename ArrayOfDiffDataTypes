@@ -1,0 +1,22 @@
+
+public class ArrayOfDiffDataTypes {
+    public static void main (String [] args){
+        char [] wordArInit = {'a','l','i','m'};
+        int [] intArInit = {5,10,15,20};
+        double [] doubleArInit = {11,16,13.14,12.12,9.76};
+    
+    System.out.println("Char Array");
+        for (int i = 0; i < 4; i ++){
+        System.out.println("Char at index" + "[" + i + "]:" + wordArInit[i]);
+        }
+    System.out.println("Integer Array");
+        for (int i = 0; i < 4; i ++){
+        System.out.println("Integer at index" + "[" + i + "]:" + intArInit[i]);
+        }
+    System.out.println("Double Array");
+        for (int i = 0; i < 4; i ++){
+        System.out.println("Double at index" + "[" + i + "]:" + doubleArInit[i]);
+        }
+    
+    }//main
+}//class
