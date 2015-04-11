@@ -1,0 +1,19 @@
+import java.io.*;
+public class GradeEval {
+public static void main(String [] args) throws IOException{
+BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+	float grade;
+System.out.print("\n\tEnter Grade: ");
+grade = Float.parseFloat(br.readLine());
+
+while (grade >= 75.00 && grade <= 100.00) {
+	System.out.print("\n\tPassed");
+		}
+else if (grade >= 0.00 && grade <= 74.99) {
+	System.out.print("\n\tFailed");
+		}
+else if (grade <= 101) {
+	System.out.print("\n\tInvalid Grade");
+		}
+}//main
+}//class
