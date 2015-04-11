@@ -1,0 +1,22 @@
+import java.io.*;
+public class DetermineYearOfBirth2 {
+public static void main(String [] args) throws IOException{
+BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+	int year;
+	int age;
+	int x;
+	char ans;
+do{
+System.out.print("\n\tEnter Current Year: ");
+year = Integer.parseInt(br.readLine());
+
+System.out.print("\n\tEnter Age: ");
+age = Integer.parseInt(br.readLine());
+x = year-age;
+
+System.out.print("\n\tYear of Birth: " + x );
+System.out.print("\n\n\nTry Another Y/N?: ");
+ans= br.readLine().charAt(0);
+}while (ans != 'N' && ans != 'n') ;
+}//main
+}//class
