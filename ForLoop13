@@ -1,0 +1,19 @@
+//import java.io.*;
+public class ForLoopTwo {
+public static void main(String [] args) {
+//BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+
+for(int i = 11, k = 1; i > 0 && k < 6; i--, k++){
+for(int j = 0; j<i; j++){
+System.out.print(" ");
+}
+for(int j=0 ; j<k; j++){
+System.out.print("@");
+}
+for(int j = 0; j < k; j++){
+System.out.print("@");
+}
+System.out.println();
+}
+}//main
+}//class
