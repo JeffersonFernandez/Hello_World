@@ -1,0 +1,20 @@
+import java.io.*;
+public class OneDimeWithUI {
+
+    public static void main(String[]args)throws IOException{
+        BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+            
+            int[] arNum = new int[5];
+            int i;
+            
+        System.out.println("One-Dim with UI");
+        for( i = 0; i < 5; i ++){
+            System.out.print("Enter Five Numbers: ");
+            arNum[i] = Integer.parseInt(br.readLine());
+        }
+        for ( i = 0; i < 5; i ++){
+            System.out.println(arNum[i]);
+        }
+    }
+}
+
