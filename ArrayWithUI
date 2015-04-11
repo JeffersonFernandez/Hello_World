@@ -1,0 +1,89 @@
+import java.io.*;
+public class QuizOneTwoThree {
+
+    public static void main(String[]args)throws IOException{
+        BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+            
+            double[] arNum = new double[12];
+            char ans;
+            int tryagain=1, validans=1;
+        do{
+            System.out.println("One Dimensional Array with UI");
+            System.out.println("Enter Twelve Numbers: ");
+        
+            for (int a=0; a<12; a++){
+                System.out.print("Enter a Number at Index [" + a + "]: ");
+                arNum[a]=Double.parseDouble(br.readLine());
+        }//Summary
+            System.out.println("[Index] Output Summary: ");
+            for (int a=0; a<12; a++){
+            System.out.println(" " + arNum[a]);
+             }
+            //Highest
+            double highest = 0;
+            
+            for (int a=0; a<12; a++){
+                if(highest < arNum[a]){
+                    highest = arNum[a];
+                    }
+            }                     
+            System.out.println("\n[Index] of Highest: ");
+            for (int a=0; a<12; a++){
+                if(highest <= arNum[a]){
+                    System.out.println("[" + a + "]" + highest);
+                }
+            }
+            
+            //Lowest
+            double lowest = highest;
+            
+             for (int a=0; a<12; a++){
+                if(arNum[a] <= lowest){
+                    lowest = arNum[a];
+                }
+            }
+             System.out.println("\n[Index] of Lowest: ");
+            for (int a=0; a<12; a++){
+                if(arNum[a] <= lowest){
+                    System.out.println("[" + a + "]" + lowest);
+      
+            }
+        }
+        //Even
+        System.out.println("\n[index] of Even: ");
+        for (int a=0; a<12; a++){
+            if(arNum[a]%2 == 0/2){
+                System.out.println("[" + a +"]" + arNum[a]);
+                }
+         }
+        //Odd
+        System.out.println("\n[Index] of Odd: ");
+        for (int a=0; a<12; a++){
+            if(arNum[a]%2 == 1){
+                System.out.println("[" + a +"]" + arNum[a]);
+            }
+        }
+        do{
+        System.out.println("\nTry Another [Y/N]?: ");
+        ans = br.readLine().charAt(0);
+        switch (ans){
+            case 'Y':validans = 1;
+                     tryagain = 1;
+                     break;
+            case 'y':validans = 1;  
+                     tryagain = 1;
+                     break;
+            case 'N':validans = 1;
+                     tryagain = 2;
+                     break;
+            case 'n':validans = 1;
+                     tryagain = 2;
+                     break;
+            default: validans = 2;
+         System.out.println("Invalid Choice");      
+        }
+    }while (validans == 2);
+    }while (tryagain == 1);
+  }
+}
+
