@@ -1,0 +1,36 @@
+import java.io.*;
+public class DoWhile {
+public static void main(String [] args) throws IOException{
+BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+	char ans;
+	char init;
+	String name;
+	int age;
+	float tuition;
+do{
+System.out.print("\nEnter Your Name: ");
+name = br.readLine();
+
+System.out.print("\nEnter Your Initial: ");
+init = br.readLine().charAt(0);
+
+System.out.print("\nEnter Your Age: ");
+age = Integer.parseInt(br.readLine());
+
+System.out.print("\nEnter Tuition: ");
+tuition = Float.parseFloat(br.readLine());
+
+System.out.print("\n\n");
+System.out.print("\nYour name is " + name);
+System.out.print("\nYour name is " + init);
+System.out.print("\nYour name is " + age);
+System.out.print("\nYour name is " + tuition);
+
+System.out.print("\n\n\nTry Another Y/N?: ");
+ans= br.readLine().charAt(0);
+
+}while (ans != 'N' && ans != 'n') ;
+
+
+}//main
+}//class
