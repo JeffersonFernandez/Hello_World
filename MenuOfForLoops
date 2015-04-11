@@ -1,0 +1,151 @@
+import java.io.*;
+public class Menu {
+public static void main(String [] args) throws IOException {
+BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+	int num;
+	char ans;
+
+while(ans !='N' && ans !='n'){
+System.out.print("\nMenu");
+System.out.print("\n\n[1] For Loop One");
+System.out.print("\n[2] For Loop Two");
+System.out.print("\n[3] For Loop Three");
+System.out.print("\n[4] For Loop Four");
+System.out.print("\n[5] For Loop Five");
+System.out.print("\n[6] For Loop Six");
+System.out.print("\n[7] For Loop Seven");
+System.out.print("\n[8] For Loop Eight");
+System.out.print("\n\nPlease Enter The Number Of Your Choice:");
+num = Integer.parseInt(br.readLine());
+
+
+switch(num){
+	case 1:
+for(int x = 5; x >= 0; x--){
+System.out.print("\n");
+for(int y = 0; y <= 5; y++){
+	if (x<y){
+	System.out.print("@");
+	}
+	else{
+	System.out.print(" ");
+	}
+}
+}
+;
+break;
+
+
+
+	case 2: 
+for(int i = 11, k = 1; i > 0 && k < 6; i--, k++){
+for(int j = 0; j<i; j++){
+System.out.print(" ");
+}
+for(int j=0 ; j<k; j++){
+System.out.print("@");
+}
+for(int j = 0; j < k; j++){
+System.out.print("@");
+}
+System.out.println();
+}
+;
+break;
+
+	case 3: 
+for(int i = 5; i >= 1; i--)
+{
+	for(int j=1 ; j <=i; j++)
+	{
+	System.out.print("@ ");
+	}
+System.out.print("\n");
+}
+;
+break;
+	case 4: 
+for(int i = 1; i <= 5; i++)
+{
+System.out.print("*");
+}
+for(int j=1 ; j <=5; j++)
+{
+System.out.print("\n  *");
+}
+;
+break;
+
+	case 5: 
+for(int i = 1; i <= 5; i++)
+{
+System.out.print("*");
+}
+for(int j=1 ; j <=5; j++)
+{
+System.out.print("\n    *");
+}
+;
+break;
+	case 6: 
+for(int i = 1; i <= 5; i++){
+System.out.print("  *\n");
+}
+	for(int a=1 ; a <= 5; a++){
+System.out.print("*");
+	}
+;
+break;
+	case 7: 
+for(int i= 0; i < 5; i++)
+{
+System.out.print("    *\n");
+}
+for(int j=0 ; j <=4; j++)
+{
+System.out.print("*");
+}
+System.out.print("\n");
+;
+break;
+	case 8:
+for (int i=0; i<=6; i++){
+		for (int j=0; j<5;j ++){
+			if (j==0) {
+				System.out.print("*");
+			}if(j-i>0){
+				System.out.print(" ");
+			}
+			if(i-j>3){
+				System.out.print(" ");
+			}if(j==3&&i>=3) {
+				System.out.print("*");
+		}
+	}
+	if(i<3){
+		System.out.print("*");
+	}
+		System.out.println(" ");
+	} 
+;
+break;
+
+default: 
+System.out.print("Invalid Input");
+break;
+}//switch
+
+
+
+System.out.print("\n\n\nTry Another Y/N?: ");
+ans= br.readLine().charAt(0);
+while (ans != 'Y' || ans != 'y' || ans !='N' || ans !='n'){
+System.out.print("Invalid Choice");
+System.out.print("Try Another?");
+
+
+}//main
+
+}//class
+
+
