@@ -1,0 +1,109 @@
+import java.io.*;
+public class EnhancedQuizOneTwoThree {
+    
+    public static void EnterArray()throws IOException{
+    BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+    char choice;
+        System.out.println("One Dimensional Array with UI");
+        System.out.println("Please Enter Twelve (12) Numbers: ");
+    }
+    public static void Menu() throws IOException{
+    BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+            double[] arNum = new double[12];
+            int tryagain=1, validans=1;
+            char choice;
+            
+            do{
+                EnterArray();
+                
+                       
+                for (int a=0; a<12; a++){
+                    System.out.print("Enter Number at Index [" + a + "]: ");
+                    if(arNum[a] == arNum[a]){
+                arNum[a]=Double.parseDouble(br.readLine());
+                
+                }
+                else{
+                    System.out.println("Invalid Input");
+                    }
+                }
+             
+            //Output
+            System.out.println("\n[Index] Output Summary: ");
+                for (int a=0; a<12; a++){
+                    System.out.println(" " + arNum[a]);
+                }
+            
+            //Highest
+            double highest = 0;
+            
+            for (int a=0; a<12; a++){
+                if(highest < arNum[a]){
+                    highest = arNum[a];
+                    }
+            }                     
+                System.out.println("\n[Index] of Highest: ");
+                    for (int a=0; a<12; a++){
+                        if(highest <= arNum[a]){
+                            System.out.println("[" + a + "]" + highest);
+                        }
+                    }
+            
+            //Lowest
+            double lowest = highest;
+            
+             for (int a=0; a<12; a++){
+                if(arNum[a] <= lowest){
+                    lowest = arNum[a];
+                }
+            }
+             System.out.println("\n[Index] of Lowest: ");
+            for (int a=0; a<12; a++){
+                if(arNum[a] <= lowest){
+                    System.out.println("[" + a + "]" + lowest);
+      
+            }
+        }
+        //Even
+        System.out.println("\n[Index] of EVEN: ");
+        for (int a=0; a<12; a++){
+            if(arNum[a]%2 == 0/2){
+                System.out.println("[" + a + "]" + arNum[a]);
+                }
+         }
+        //Odd
+        System.out.println("\n[Index] of ODD: ");
+        for (int a=0; a<12; a++){
+            if(arNum[a]%2 == 1){
+                System.out.println("[" + a + "]" + arNum[a]);
+            }
+        }
+        do{
+                        
+        System.out.println("\nTry Another [Y/N]?: ");
+        choice = br.readLine().charAt(0);
+        switch (choice){
+            case 'Y':validans = 1;
+                     tryagain = 1;
+                     break;
+            case 'y':validans = 1;  
+                     tryagain = 1;
+                     break;
+            case 'N':validans = 1;
+                     tryagain = 2;
+                     break;
+            case 'n':validans = 1;
+                     tryagain = 2;
+                     break;
+            default: validans = 2;
+         System.out.println("Invalid Choice");      
+        }
+    }while (validans == 2);
+    }while (tryagain == 1);
+    }
+public static void main(String[]args)throws IOException{
+        BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+            Menu();
+  }
+}
+
