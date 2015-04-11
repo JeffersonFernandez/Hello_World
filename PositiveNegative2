@@ -1,0 +1,22 @@
+import java.io.*;
+public class PositiveNegative {
+public static void main(String [] args) throws IOException{
+BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+	int num;
+System.out.print("\n\tEnter number: ");
+num = Integer.parseInt(br.readLine());
+
+if (num < 0) {
+System.out.print("\n\tNumber is Negative");
+}
+if (num > 0) {
+System.out.print("\n\tNumber is Positive");
+}
+
+if (num == 0) {
+System.out.print("\n\tNumber is Positive");
+}
+
+
+}//main
+}//class
