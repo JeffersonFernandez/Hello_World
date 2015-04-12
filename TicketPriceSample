@@ -1,0 +1,45 @@
+package jeff_samples;
+/*This program computes the price of IMAX Movie Tickets worth Php575.50
+ * 12 below and 60 and up gets 20% discount.
+ * Those with discount coupon gets 20% discount.
+ * This uses basic conditional operators and basic if statements.
+*/
+import java.util.Scanner;
+
+public class TicketPriceSample {
+	public static void main (String [] args) {
+		Scanner userinput = new Scanner(System.in);
+		int age;
+		double price = 0.00;
+		char discount;
+		
+		System.out.print("How old are you? ");
+		age = userinput.nextInt();
+		
+		System.out.print("Do you have discount coupon?(Y/N ) ");
+		discount = userinput.findWithinHorizon(".", 0).charAt(0);
+		
+		if (age >= 12 && age < 60){
+			price = 575.50;
+		}
+		if (age < 12 || age >= 60){
+			price = 475.50;
+		}
+		if (discount == 'Y' || discount == 'y'){
+			price -=100;
+		}
+		
+		if (discount != 'Y' && discount != 'y' && 
+				discount != 'N' && discount != 'n'){
+			System.out.println("Invalid Reply");
+		}
+		
+		System.out.print("Please pay Php ");
+		System.out.print(price);
+		System.out.print(". ");
+		System.out.println("Enjoy the movie!");
+		userinput.close();
+		
+	}
+
+}
