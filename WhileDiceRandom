@@ -1,0 +1,24 @@
+package jeff_samples;
+
+import java.util.Random;
+import static java.lang.System.out;
+
+public class Hello_World {
+	
+	
+	public static void main (String [] args) throws InterruptedException{
+		Random myRandom = new Random();
+		int dice1 = 0, dice2 = 0;
+		
+		while (dice1 + dice2 != 10 && dice1 + dice2 != 11){
+			dice1 = myRandom.nextInt(6) + 1;
+			dice2 = myRandom.nextInt(6) + 1;
+			
+			out.print(dice1);
+			out.print(" ");
+			out.println(dice2);
+		}
+		out.print("Rolled ");
+		out.println(dice1 + dice2);
+	}
+}
