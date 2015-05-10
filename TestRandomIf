@@ -1,0 +1,27 @@
+package javasamples;
+
+import java.util.Scanner;
+import java.util.Random;
+
+public class TestRandomIf {
+
+    public static void main(String[] args) {
+      Scanner keyboard = new Scanner(System.in);
+      Random anyRandom = new Random();
+      int randomNumber;
+      
+      System.out.println("Type any question, user: ");
+      keyboard.nextLine();
+      
+      randomNumber = anyRandom.nextInt(10) + 1;
+      
+      if (randomNumber > 5){
+          System.out.println("Yes, Isn't it obvious?");
+      }
+      else{
+          System.out.println("No, and don't ask again.");
+      }
+      keyboard.close();
+    }
+    
+}
